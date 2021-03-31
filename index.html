@@ -9,6 +9,7 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/761e4c8e5c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="src/style.css">
+    <link rel="icon" href="src/images/logo3-white.png" type="image/png">
     <title>zeljkoDe.</title>
 </head>
 
@@ -19,9 +20,9 @@
         <div class="container">
             <img class="logo" src="src/images/logo3-white.png" alt="logo-img">
             <ul>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Hire me</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -68,41 +69,6 @@
 
     <section id="projects" class="projects">
         <div class="container">
-            <!-- <h2>Selected work</h2> -->
-            <!-- PRVI POKUSAJ -->
-            <!-- <div class="projects-section">
-                <div data-id="1" class="project-card">
-                    <img src="src/images/project1aa.png" alt="">
-                </div>
-                <div data-id="2" class="project-card">
-                    <img src="src/images/project2aa.png" alt="">
-                </div>
-                <div data-id="3" class="project-card">
-                    <img src="src/images/project3aa.png" alt="">
-                </div>
-                <div data-id="4" class="project-card">
-                    <img src="src/images/project4aa.png" alt="">
-                </div>
-            </div>
-            <div class="model">
-                <div class="overlay"></div>
-                <div class="wrapper">
-                    <div class="img"><img src="src/images/project4.png" alt=""></div>
-                    <div class="text">
-                        <h3>Lorem, ipsum dolor.</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt id rerum voluptate velit
-                            error
-                            quis.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Mollitia excepturi harum, voluptas
-                            ratione
-                            qui veritatis culpa assumenda aperiam iste repellat.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur.</p>
-                        <a>link</a>
-                    </div>
-                </div>
-            </div> -->
-            <!-- KRAJ PRVOG POKUSAJA -->
-
             <article class="projects__description">
                 <div class="projects__sum">
                     <h2 style="color: #fff">Selected work</h2>
@@ -110,38 +76,39 @@
                     <h4 class="projects__item">House Works</h4>
                     <h4 class="projects__item">Law Office</h4>
                     <h4 class="projects__item">Webcon Studio</h4>
-                    <a href="#">see more</a>
+                    <a href="projects.html">view more</a>
                 </div>
+                <article class="projects__section--sm">
+                    <div class="projects__card">
+                        <img src="src/images/projectImg1.png" alt="" class="projects__img">
+                    </div>
+                </article>
                 <div class="text">
-                    <p>I am, at heart, a creative thinker; an artistic type with a strange obsession for code.
+                    <p>I am, at heart, a creative thinker; an artistic type with a strange obsession with code.
                         <br>
                         ...
                         <br>
                         I enjoy helping entrepreneurs bring their ideas to life in the digital space, and I look forward
                         to beginning yet another successful project with you!
                     </p>
-                    <p>I want to bring ideas to life. </p>
+                    <p>I want to bring your ideas to life. </p>
                     <p class="cta"><span>My Toolbelt includes:</span>
                         <br> HTML5, CSS3, SASS, Bootstrap, JavaScript,
                         jQuery, Node.js, Vue.js, GitHub, Adobe
                         Photoshop, Adobe
                         Ilustrator
                     </p>
-                    <p>I can accomplish the following for you:</p>
+                    <p>What I can accomplish for you:</p>
                     <ul>
                         <li>- Create rich and compelling user interfaces.</li>
                         <li>- Build web applications with dynamic content.</li>
                         <li>- Prototype new designs (mockup-to-product)</li>
                     </ul>
                 </div>
-                <div class="contact">
+                <div id="contact" class="contact">
                     <h3>Let's get in touch</h3>
                     <form>
-                        <!-- <input type="text" name="name" id="name" placeholder="Name">
-                        <input type="email" name="email" id="email" placeholder="Email">
-                        <textarea name="message" id="message" cols="30" rows="8" placeholder="👋"></textarea>
-                        <input type="submit" name="submit" id="submit" value="Send"> -->
-                        <div class="form-control">
+                        <div name="contact" method="POST" data-netlify="true" class="form-control">
                             <input type="text" name="name" id="name">
                             <label>Name</label>
                         </div>
@@ -150,7 +117,7 @@
                             <label>Email</label>
                         </div>
                         <textarea name="message" id="message" cols="30" rows="7" placeholder="👋"></textarea>
-                        <input type="submit" name="submit" id="submit" value="Send">
+                        <input type="submit" name="submit" id="submit" class="btn btn--animation" value="Send">
                     </form>
                 </div>
             </article>

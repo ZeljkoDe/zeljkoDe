@@ -51,16 +51,27 @@ body {
 }
 h1 {
   font-size: 6rem;
+  @media (max-width: 768px) {
+    font-size: 5.5rem;
+  }
 }
 h2 {
   font-size: 3rem;
   margin-bottom: 0.5em;
+  @media (max-width: 768px) {
+    font-size: 2.5rem;
+  }
+  @media (max-width: 600px) {
+    font-size: 2rem;
+  }
 }
 h3 {
   font-size: 2rem;
   margin-top: 1em;
   margin-bottom: 0.5em;
-  // text-transform: uppercase;
+  @media (max-width: 768px) {
+    font-size: 1.5rem;
+  }
 }
 h4 {
   font-size: 1.5rem;
@@ -90,8 +101,38 @@ img {
 }
 .logo {
   width: 65px;
+  @media (max-width: 650px) {
+    width: 40px;
+    margin-bottom: 0.5em;
+  }
 }
 
+.btn {
+  display: block;
+  padding: 0.5rem 1rem;
+  border: 0;
+  transition: $tranistion;
+  margin-bottom: 0.3rem;
+  &:hover {
+    background: #2f8eb6;
+    color: #ffff;
+  }
+}
+.btn-dark {
+  @extend .btn;
+  background: darken(#2e2e2e, 50);
+  color: #fff;
+}
+.btn-middle {
+  @extend .btn;
+  background: #2e2e2e;
+  color: #fff;
+}
+.btn-light {
+  @extend .btn;
+  background: lighten(#2e2e2e, 50);
+  color: #333;
+}
 /*************   nav   *************/
 nav {
   background-color: #272727;
@@ -108,6 +149,16 @@ nav {
         }
       }
     }
+    @media (max-width: 650px) {
+      @include flex(center, center, column);
+      ul {
+        @include flex(center, center, row);
+        font-size: 1.5rem;
+        li {
+          margin-left: 0.5em;
+        }
+      }
+    }
   }
 }
 /*************   hero   *************/
@@ -116,12 +167,22 @@ nav {
   height: 100vh;
   border-radius: 0 0 10rem 0;
   color: #ffffff;
+  overflow: hidden;
+
+  // @include flex(center, space-between, row);
   .container {
     height: 30vh;
     transform: translateY(100%);
     @include flex(center, space-between, row);
+    @media (max-width: 650px) {
+      @include flex(center, space-between, column);
+    }
     .text {
       position: relative;
+      @media (max-width: 650px) {
+        position: absolute;
+        margin-top: -50%;
+      }
       span {
         color: #2f8eb6;
         font-weight: 300;
@@ -132,16 +193,28 @@ nav {
         position: absolute;
         top: -13em;
         left: 30em;
+        @media (max-width: 650px) {
+          display: none;
+        }
       }
     }
     .socials {
       @include flex(center, space-between, column);
+      @media (max-width: 650px) {
+        @include flex(center, space-between, row);
+        margin-top: 60%;
+      }
       a {
         transform: scale(1);
         transition: $tranistion;
         & + * {
           margin-top: 1em;
+          @media (max-width: 650px) {
+            margin-top: 0;
+            margin-left: 1em;
+          }
         }
+
         &:hover {
           transform: scale(1.3);
         }
@@ -246,6 +319,15 @@ nav {
         }
       }
     }
+    @media (max-width: 1000px) {
+      .text {
+        top: 10em;
+        &::after {
+          top: -35em;
+          left: 10em;
+        }
+      }
+    }
   }
 }
 /*************   about   *************/
@@ -264,6 +346,9 @@ nav {
     .container {
       padding: $padding;
       @include flex(center, space-between, row);
+      @media (max-width: 768px) {
+        @include flex(center, space-between, column);
+      }
       .text {
         flex: 0 0 58%;
         text-align: justify;
@@ -271,6 +356,9 @@ nav {
       img {
         flex: 0 0 40%;
         width: 100%;
+        @media (max-width: 768px) {
+          margin-top: 1em;
+        }
       }
     }
   }
@@ -296,11 +384,17 @@ nav {
     padding: $padding;
     position: inherit;
     @include flex(flex-start, space-between, row);
+    @media (max-width: 1140px) {
+      @include flex(flex-start, space-between, column);
+    }
     h2 {
       flex: 100%;
     }
     .projects__section {
       flex: 0 0 60%;
+      @media (max-width: 1140px) {
+        display: none;
+      }
     }
     .projects__description {
       flex: 0 0 38%;
@@ -310,6 +404,13 @@ nav {
         background: #2e2e2e;
         padding: 2em;
         border-radius: 0.5em;
+      }
+      .projects__section--sm {
+        display: none;
+        @media (max-width: 1140px) {
+          display: block;
+          margin-top: 1em;
+        }
       }
       .text {
         margin-top: 2em;
@@ -435,6 +536,7 @@ nav {
     }
     .model {
       display: none;
+      // visibility: initial;
       .overlay {
         position: fixed;
         width: 100%;
@@ -478,6 +580,70 @@ nav {
   }
 }
 
+// projects
+.projects-page {
+  padding: $padding;
+  min-height: 55vh;
+  .container {
+    // height: 100%;
+    .btn-nav {
+      @include flex(center, center, row);
+
+      // margin-left: %;
+      & > * + * {
+        margin-left: 0.1em;
+      }
+      button {
+        font-size: 1.5rem;
+      }
+    }
+    .work {
+      @include flex(center, flex-start, row);
+
+      margin-top: 1em;
+      // gap: 0.5em;
+      .item {
+        flex: 0 0 32%;
+        margin: 0.5em;
+        .img {
+          position: relative;
+          overflow: hidden;
+          height: 200px;
+          img {
+            height: 200px;
+            width: 100%;
+            border-bottom: 0.3rem solid #fff;
+            object-fit: cover;
+          }
+          .item-text {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            padding: 1em;
+            // transform: translateY(0%);
+            // top: 20%;
+          }
+          &:hover {
+            img {
+              opacity: 0.2;
+              border-color: #2f8eb6;
+            }
+            .item-text {
+              transform: translateY(-100%);
+            }
+          }
+        }
+        @media (max-width: 1250px) {
+          flex: 1 0 48%;
+        }
+        // @media (max-width: 835px) {
+        //   flex: 0 0 100%;
+        // }
+      }
+    }
+  }
+}
+
 footer {
   display: block;
   color: #ffffff;
@@ -487,10 +653,21 @@ footer {
   padding-bottom: 0.2em;
   .container {
     @include flex(center, space-between, row);
-    height: 25vh;
+    height: 20vh;
     padding: $padding;
+    @media (max-width: 750px) {
+      height: auto;
+    }
+    @media (max-width: 650px) {
+      p {
+        flex: 100%;
+      }
+    }
     .socials {
       transform: scale(0.8);
+      @media (max-width: 650px) {
+        transform: scale(0.4);
+      }
       & > * + * {
         margin-left: 2em;
       }
