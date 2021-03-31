@@ -54,6 +54,9 @@ h1 {
   @media (max-width: 768px) {
     font-size: 5.5rem;
   }
+  @media (max-width: 650px) {
+    font-size: 5rem;
+  }
 }
 h2 {
   font-size: 3rem;
@@ -90,6 +93,9 @@ a {
 }
 li {
   list-style-type: none;
+  @media (max-width: 650px) {
+    font-size: 1.2rem;
+  }
 }
 img {
   max-width: 100%;
@@ -168,8 +174,6 @@ nav {
   border-radius: 0 0 10rem 0;
   color: #ffffff;
   overflow: hidden;
-
-  // @include flex(center, space-between, row);
   .container {
     height: 30vh;
     transform: translateY(100%);
@@ -181,7 +185,7 @@ nav {
       position: relative;
       @media (max-width: 650px) {
         position: absolute;
-        margin-top: -50%;
+        margin-top: -60%;
       }
       span {
         color: #2f8eb6;
@@ -202,7 +206,7 @@ nav {
       @include flex(center, space-between, column);
       @media (max-width: 650px) {
         @include flex(center, space-between, row);
-        margin-top: 60%;
+        margin-top: 70%;
       }
       a {
         transform: scale(1);
@@ -231,6 +235,9 @@ nav {
       text-decoration: none;
       cursor: pointer;
       overflow: hidden;
+      @media (max-width: 650px) {
+        margin: 1.5em 0 0 35%;
+      }
       &::before {
         content: "";
         position: absolute;
@@ -436,20 +443,6 @@ nav {
       .contact {
         form {
           @include flex(flex-start, center, column);
-
-          // input[type="text"],
-          // input[type="email"],
-          // textarea {
-          //   font-family: "Poppins";
-          //   border: none;
-          //   border-bottom: 1px solid #2e2e2e;
-          //   width: 100%;
-          //   margin-bottom: 1em;
-          //   padding: 0.5em;
-          //   &:focus {
-          //     border: 1px solid #2f8eb6;
-          //   }
-          // }
           textarea {
             font-family: inherit;
             border: 1px solid #2e2e2e;
@@ -636,9 +629,6 @@ nav {
         @media (max-width: 1250px) {
           flex: 1 0 48%;
         }
-        // @media (max-width: 835px) {
-        //   flex: 0 0 100%;
-        // }
       }
     }
   }

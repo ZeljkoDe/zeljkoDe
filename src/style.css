@@ -26,6 +26,12 @@ h1 {
   }
 }
 
+@media (max-width: 650px) {
+  h1 {
+    font-size: 5rem;
+  }
+}
+
 h2 {
   font-size: 3rem;
   margin-bottom: 0.5em;
@@ -76,6 +82,12 @@ a {
 
 li {
   list-style-type: none;
+}
+
+@media (max-width: 650px) {
+  li {
+    font-size: 1.2rem;
+  }
 }
 
 img {
@@ -300,7 +312,7 @@ nav .container ul li a:hover::after {
 @media (max-width: 650px) {
   .hero .container .text {
     position: absolute;
-    margin-top: -50%;
+    margin-top: -60%;
   }
 }
 
@@ -358,7 +370,7 @@ nav .container ul li a:hover::after {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-top: 60%;
+    margin-top: 70%;
   }
 }
 
@@ -396,6 +408,12 @@ nav .container ul li a:hover::after {
   text-decoration: none;
   cursor: pointer;
   overflow: hidden;
+}
+
+@media (max-width: 650px) {
+  .hero .container .btn, .hero .container .btn-dark, .hero .container .btn-middle, .hero .container .btn-light {
+    margin: 1.5em 0 0 35%;
+  }
 }
 
 .hero .container .btn::before, .hero .container .btn-dark::before, .hero .container .btn-middle::before, .hero .container .btn-light::before {
