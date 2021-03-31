@@ -709,6 +709,7 @@ nav .container ul li a:hover::after {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-top: 0;
   }
 }
 

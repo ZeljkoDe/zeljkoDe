@@ -393,6 +393,7 @@ nav {
     @include flex(flex-start, space-between, row);
     @media (max-width: 1140px) {
       @include flex(flex-start, space-between, column);
+      padding-top: 0;
     }
     h2 {
       flex: 100%;
