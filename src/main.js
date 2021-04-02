@@ -49,7 +49,7 @@ const projects = [
         img: "src/images/project8a.png",
         live: "https://zeljkode.github.io/house-works-website/",
         git: "https://github.com/ZeljkoDe/house-works-website.git",
-        desc: ``,
+        desc: `Website idea for construction works.`,
     },
     {
         id: 7,
