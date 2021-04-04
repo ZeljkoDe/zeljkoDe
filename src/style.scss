@@ -359,22 +359,22 @@ nav {
     h2 {
       flex: 100%;
     }
-    .projects__section {
+    .projects-section {
       flex: 0 0 60%;
       @media (max-width: 1140px) {
         display: none;
       }
     }
-    .projects__description {
+    .projects-description {
       flex: 0 0 38%;
       text-align: center;
       align-self: flex-start;
-      .projects__sum {
+      .projects-sum {
         background: #2e2e2e;
         padding: 2em;
         border-radius: 0.5em;
       }
-      .projects__section--sm {
+      .projects-section-sm {
         display: none;
         @media (max-width: 1140px) {
           display: block;

@@ -632,19 +632,19 @@ nav .container ul li a:hover::after {
           flex: 100%;
 }
 
-.projects .container .projects__section {
+.projects .container .projects-section {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 60%;
           flex: 0 0 60%;
 }
 
 @media (max-width: 1140px) {
-  .projects .container .projects__section {
+  .projects .container .projects-section {
     display: none;
   }
 }
 
-.projects .container .projects__description {
+.projects .container .projects-description {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 38%;
           flex: 0 0 38%;
@@ -653,48 +653,48 @@ nav .container ul li a:hover::after {
       align-self: flex-start;
 }
 
-.projects .container .projects__description .projects__sum {
+.projects .container .projects-description .projects-sum {
   background: #2e2e2e;
   padding: 2em;
   border-radius: 0.5em;
 }
 
-.projects .container .projects__description .projects__section--sm {
+.projects .container .projects-description .projects-section-sm {
   display: none;
 }
 
 @media (max-width: 1140px) {
-  .projects .container .projects__description .projects__section--sm {
+  .projects .container .projects-description .projects-section-sm {
     display: block;
     margin-top: 1em;
   }
 }
 
-.projects .container .projects__description .text {
+.projects .container .projects-description .text {
   margin-top: 2em;
   text-align: justify;
 }
 
-.projects .container .projects__description .text > * + * {
+.projects .container .projects-description .text > * + * {
   margin-top: 1.5em;
 }
 
-.projects .container .projects__description .text .cta {
+.projects .container .projects-description .text .cta {
   background-color: #2f8eb6;
   padding: 0.5em;
   border-radius: 0.5em;
   color: white;
 }
 
-.projects .container .projects__description .text .cta span {
+.projects .container .projects-description .text .cta span {
   font-style: italic;
 }
 
-.projects .container .projects__description .text ul li {
+.projects .container .projects-description .text ul li {
   font-size: 1.1rem;
 }
 
-.projects .container .projects__description .contact form {
+.projects .container .projects-description .contact form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -712,7 +712,7 @@ nav .container ul li a:hover::after {
           flex-direction: column;
 }
 
-.projects .container .projects__description .contact form textarea {
+.projects .container .projects-description .contact form textarea {
   font-family: inherit;
   border: 1px solid #2e2e2e;
   width: 100%;
@@ -720,17 +720,17 @@ nav .container ul li a:hover::after {
   padding: 0.5em;
 }
 
-.projects .container .projects__description .contact form textarea:focus {
+.projects .container .projects-description .contact form textarea:focus {
   border: 1px solid #2f8eb6;
 }
 
-.projects .container .projects__description .contact form .form-control {
+.projects .container .projects-description .contact form .form-control {
   position: relative;
   margin: 20px 0 20px;
   width: 100%;
 }
 
-.projects .container .projects__description .contact form .form-control input {
+.projects .container .projects-description .contact form .form-control input {
   background-color: transparent;
   border: 0;
   border-bottom: 1px solid #2e2e2e;
@@ -742,13 +742,13 @@ nav .container ul li a:hover::after {
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.projects .container .projects__description .contact form .form-control label {
+.projects .container .projects-description .contact form .form-control label {
   position: absolute;
   top: 0.5em;
   left: 0;
 }
 
-.projects .container .projects__description .contact form .form-control label span {
+.projects .container .projects-description .contact form .form-control label span {
   display: inline-block;
   font-size: 18px;
   min-width: 5px;
@@ -756,20 +756,20 @@ nav .container ul li a:hover::after {
   transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.projects .container .projects__description .contact form .form-control :focus {
+.projects .container .projects-description .contact form .form-control :focus {
   border: 0;
   border-bottom: 1px solid #2f8eb6;
   outline: none;
   padding: 0.5em 0;
 }
 
-.projects .container .projects__description .contact form .form-control :focus + label span {
+.projects .container .projects-description .contact form .form-control :focus + label span {
   color: #2f8eb6;
   -webkit-transform: translateY(-30px);
           transform: translateY(-30px);
 }
 
-.projects .container .projects__description .contact form #submit {
+.projects .container .projects-description .contact form #submit {
   font-size: 1.3rem;
   padding: 0.5em;
   background-color: #2f8eb6;
@@ -783,7 +783,7 @@ nav .container ul li a:hover::after {
   cursor: pointer;
 }
 
-.projects .container .projects__description .contact form #submit:hover {
+.projects .container .projects-description .contact form #submit:hover {
   -webkit-transform: scaleX(0.95);
           transform: scaleX(0.95);
 }

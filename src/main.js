@@ -70,10 +70,10 @@ const projects = [
 ];
 
 
-const projectBtns = document.querySelector('.projects__sum');
-const projectItems = document.querySelectorAll('.projects__item');
-const projectImg = document.querySelector('.projects__img');
-const projectImg2 = document.querySelector('.projects__img2');
+const projectBtns = document.querySelector('.projects-sum');
+const projectItems = document.querySelectorAll('.projects-item');
+const projectImg = document.querySelector('.projects-img');
+const projectImg2 = document.querySelector('.projects-img2');
 const btnAnimation = document.querySelector('.btn--animation');
 const labels = document.querySelectorAll('.form-control label');
 const sectionCenter = document.querySelector('.filter-container');
@@ -104,9 +104,9 @@ if (projectBtns) {
     // fade animation
     const handleHover = function (e) {
         // console.log(e);
-        if (e.target.classList.contains('projects__item')) {
+        if (e.target.classList.contains('projects-item')) {
             const link = e.target;
-            const siblings = link.closest('.projects__sum').querySelectorAll('.projects__item');
+            const siblings = link.closest('.projects-sum').querySelectorAll('.projects-item');
 
             siblings.forEach(e => {
                 if (e !== link) e.style.opacity = this;
