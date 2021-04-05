@@ -553,15 +553,18 @@ nav .container ul li a:hover::after {
   text-align: justify;
 }
 
-.about .ovarlay .container img {
+.about .ovarlay .container .about-img {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 40%;
           flex: 0 0 40%;
+}
+
+.about .ovarlay .container .about-img img {
   width: 100%;
 }
 
 @media (max-width: 768px) {
-  .about .ovarlay .container img {
+  .about .ovarlay .container .about-img {
     margin-top: 1em;
   }
 }

@@ -320,9 +320,11 @@ nav {
         flex: 0 0 58%;
         text-align: justify;
       }
-      img {
+      .about-img {
         flex: 0 0 40%;
-        width: 100%;
+        img {
+          width: 100%;
+        }
         @media (max-width: 768px) {
           margin-top: 1em;
         }
