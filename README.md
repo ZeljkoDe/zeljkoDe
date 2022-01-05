@@ -16,7 +16,7 @@
 
   <h2>📫 How to reach me:</h2> 
  
-  [![Outlook](https://img.shields.io/badge/Microsoft_Outlook-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:zeljko.de@outlook.com)
+  [![Outlook](https://img.shields.io/badge/Email-0078D4?style=for-the-badge&logo=microsoft-outlook&logoColor=white)](mailto:zeljko.de@outlook.com)
   [![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/zeljko-damnjanovic-478b7a20a/)
   
 </div>
