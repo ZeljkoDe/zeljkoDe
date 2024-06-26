@@ -1,5 +1,8 @@
 'use strict';
 
+// Import your SCSS files here
+import './style.scss';
+
 // items
 const projects = [
     {
@@ -155,7 +158,7 @@ function dispayItems(items) {
     sectionCenter.innerHTML = dispayItem;
 }
 
-// dispaly filter btns
+// display filter btn
 function dispayButtons() {
     const categories = projects.reduce(function (values, item) {
         if (!values.includes(item.category)) {
